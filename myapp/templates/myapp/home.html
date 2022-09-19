@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div center style = "border: 4px solid #000;">
+    <h1 style="text-align:center">Welcome to the website</h1>
+    <h2 style="text-align:center">Here you can downlad any youtube video you want </h2>
+
+    <form style="text-align:center" action="" method="post">
+        {% csrf_token %}
+        <label for="link">Please enter the url of the video: </label><br><br>
+        <input id="link" type="text" name="link" value="copie the Url here"><br><br>
+        <input type="submit" style= "background-color:aqua" value="Download">
+    </form>
+</div>
+
+
+
+{% endblock content %}
